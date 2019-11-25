@@ -1,9 +1,13 @@
-
 <div>
-<input class='buscar' (keyup.enter) = 'searchByGenre($event)' type="text" placeholder='Buscar por género o título'>
+    <label for="genreSearch">Buscar por género</label>
+    <input id='genreSearch' class='search' (keyup.enter)='searchByGenre($event)' type="text" placeholder='Drama...'>
+    <label for="genreSearch">Buscar por título</label>
+    <input id='titleSearch' class='search' (keyup.enter)='searchByTitle($event)' type="text" placeholder='Avengers...'>
     <!-- <button (click)='getMoviesByGenre()'>Buscar</button> -->
 </div>
-<div *ngFor='let movie of movies'>
-    <h3>{{movie.title}}</h3>
-    <img src = "https://image.tmdb.org/t/p/w200{{movie.poster_path}}">
+<div class='movie'>
+    <div  *ngFor='let movie of movies'>
+        <h3>{{movie.title}}</h3>
+        <img src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}">
+    </div>
 </div>

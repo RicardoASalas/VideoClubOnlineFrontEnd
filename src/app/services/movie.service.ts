@@ -16,7 +16,12 @@ export class MovieService {
   }
 
   getMoviesByGenre(genre):Observable<object>{
-
+    console.log("el titulo es "+genre)
     return this.http.get(`http://localhost:3001/movie/genre/${genre}`)
+  }
+
+  getMoviesByTitle(title):Observable<object>{
+    console.log("el titulo es "+title)
+    return this.http.get(`http://localhost:3001/movie/title/${title}`)
   }
 }

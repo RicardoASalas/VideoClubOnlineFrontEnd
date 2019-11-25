@@ -10,7 +10,8 @@ import { Movie } from '../../models/movie.model';
 export class MovieListComponent implements OnInit {
   
   movies: Array<Movie> = [];
-  genero: String = '';
+  gender: String = '';
+  title: String = '';
   
   constructor(private movieService: MovieService) {}
 
@@ -24,14 +25,28 @@ export class MovieListComponent implements OnInit {
 
   searchByGenre(event: any){
     
-    this.genero = event.target.value;
-    this.movieService.getMoviesByGenre(this.genero)
+    this.gender = event.target.value;
+
+    this.movieService.getMoviesByGenre(this.gender)
     .subscribe(
       (data) => this.movies = Object.values(data),
       (error) => console.error(error)   
     )
     
   }
+
+  searchByTitle(event: any){
+    
+    this.title = event.target.value;
+
+    this.movieService.getMoviesByTitle(this.title)
+    .subscribe(
+      (data) => this.movies = Object.values(data),
+      (error) => console.error(error)   
+    )
+    
+  }
+
 }
 
 

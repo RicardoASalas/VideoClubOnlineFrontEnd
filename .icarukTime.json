@@ -1,23 +1,29 @@
 {
-    "idleHeartbeats": 4416,
-    "navigatingHeartbeats": 1879,
-    "totalCodingHeartbeats": 6612,
+    "idleHeartbeats": 5087,
+    "navigatingHeartbeats": 2110,
+    "totalCodingHeartbeats": 7632,
     "languageHeartbeats": {
-        "typescript": 4594,
-        "html": 2018
+        "typescript": 5117,
+        "html": 2314,
+        "plaintext": 10,
+        "scss": 191
     },
     "fileHeartbeats": {
         "src/app/app.component.ts": 611,
-        "src/app/app.module.ts": 417,
+        "src/app/app.module.ts": 484,
         "src/app/app.component.html": 800,
         "src/app/components/header/header.component.html": 137,
         "src/app/app-routing.module.ts": 51,
-        "src/app/services/movie.service.ts": 707,
+        "src/app/services/movie.service.ts": 798,
         "c:\\Users\\Richi\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\node_modules\\typescript\\lib\\lib.es5.d.ts": 14,
-        "src/app/components/movie-list/movie-list.component.html": 1004,
-        "src/app/components/movie-list/movie-list.component.ts": 2291,
+        "src/app/components/movie-list/movie-list.component.html": 1300,
+        "src/app/components/movie-list/movie-list.component.ts": 2656,
         "src/app/models/movie.models.ts": 69,
         "src/app/components/genre-movie-list/genre-movie-list.component.ts": 434,
-        "src/app/components/genre-movie-list/genre-movie-list.component.html": 77
+        "src/app/components/genre-movie-list/genre-movie-list.component.html": 77,
+        "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\components\\movie-list\\movie-list.component.ts.git": 10,
+        "src/app/app.component.scss": 124,
+        "src/styles.scss": 25,
+        "src/app/components/movie-list/movie-list.component.scss": 42
     }
 }
