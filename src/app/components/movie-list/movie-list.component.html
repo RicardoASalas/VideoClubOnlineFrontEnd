@@ -1,0 +1,9 @@
+
+<div>
+<input class='buscar' (keyup.enter) = 'searchByGenre($event)' type="text" placeholder='Buscar por género o título'>
+    <!-- <button (click)='getMoviesByGenre()'>Buscar</button> -->
+</div>
+<div *ngFor='let movie of movies'>
+    <h3>{{movie.title}}</h3>
+    <img src = "https://image.tmdb.org/t/p/w200{{movie.poster_path}}">
+</div>
