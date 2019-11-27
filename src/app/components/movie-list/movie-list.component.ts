@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MovieService } from '../../services/movie.service';
+import { MovieService } from '../../services/movieService/movie.service';
+// import { ErrorService } from './services/error/error.service';
 import { Movie } from '../../models/movie.model';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-movie-list',
@@ -10,8 +12,7 @@ import { Movie } from '../../models/movie.model';
 export class MovieListComponent implements OnInit {
   
   movies: Array<Movie> = [];
-  gender: String = '';
-  title: String = '';
+  movieSearched: String = '';
   
   constructor(private movieService: MovieService) {}
 
@@ -22,29 +23,22 @@ export class MovieListComponent implements OnInit {
       (error) => console.error(error)   
     )
   }
-
-  searchByGenre(event: any){
-    
-    this.gender = event.target.value;
-
-    this.movieService.getMoviesByGenre(this.gender)
-    .subscribe(
-      (data) => this.movies = Object.values(data),
-      (error) => console.error(error)   
-    )
-    
-  }
-
-  searchByTitle(event: any){
-    
-    this.title = event.target.value;
-
-    this.movieService.getMoviesByTitle(this.title)
-    .subscribe(
-      (data) => this.movies = Object.values(data),
-      (error) => console.error(error)   
-    )
-    
+  searchMovies(event: any){
+    this.movieSearched = event.target.value
+  
+      
+      this.movieService.getMoviesByGenre(this.movieSearched)
+        .subscribe(
+           (data) => this.movies = Object.values(data),      
+          (error) =>{ 
+            console.error(error)
+            this.movieService.getMoviesByTitle(this.movieSearched)
+                .subscribe(
+                (data) => this.movies = Object.values(data),
+                (error) => console.error(error)   
+                )
+            }  
+         )   
   }
 
 }

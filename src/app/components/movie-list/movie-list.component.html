@@ -1,9 +1,6 @@
 <div>
-    <label for="genreSearch">Buscar por género</label>
-    <input id='genreSearch' class='search' (keyup.enter)='searchByGenre($event)' type="text" placeholder='Drama...'>
-    <label for="genreSearch">Buscar por título</label>
-    <input id='titleSearch' class='search' (keyup.enter)='searchByTitle($event)' type="text" placeholder='Avengers...'>
-    <!-- <button (click)='getMoviesByGenre()'>Buscar</button> -->
+    <label class = 'search' for="Searching">Buscar película</label>
+    <input id='Searching' class='search' (keyup.enter)='searchMovies($event)' type="text" placeholder='Título, género...'>
 </div>
 <div class='movie'>
     <div  *ngFor='let movie of movies'>
