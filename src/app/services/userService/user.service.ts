@@ -37,7 +37,11 @@ export class UserService {
   }
 
   profile(token){
-    
+    console.log("aqui tambien")
+    this.storagedToken=JSON.parse(token)
+
+    return this.httpClient.get('http://localhost:3001/user/profile',{headers: {Authorization: this.storagedToken.token }})
+
   }
 
   tokenExists(){

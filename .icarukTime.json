@@ -1,19 +1,19 @@
 {
-    "idleHeartbeats": 16118,
-    "navigatingHeartbeats": 6636,
-    "totalCodingHeartbeats": 23724,
+    "idleHeartbeats": 17374,
+    "navigatingHeartbeats": 7352,
+    "totalCodingHeartbeats": 26150,
     "languageHeartbeats": {
-        "typescript": 17110,
-        "html": 5148,
-        "plaintext": 20,
+        "typescript": 18879,
+        "html": 5795,
+        "plaintext": 30,
         "scss": 1446
     },
     "fileHeartbeats": {
         "src/app/app.component.ts": 611,
         "src/app/app.module.ts": 861,
         "src/app/app.component.html": 1083,
-        "src/app/components/header/header.component.html": 1342,
-        "src/app/app-routing.module.ts": 1000,
+        "src/app/components/header/header.component.html": 1357,
+        "src/app/app-routing.module.ts": 1032,
         "src/app/services/movie.service.ts": 798,
         "c:\\Users\\Richi\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\node_modules\\typescript\\lib\\lib.es5.d.ts": 14,
         "src/app/components/movie-list/movie-list.component.html": 1534,
@@ -29,16 +29,20 @@
         "src/app/services/errors/error.service.spec.ts": 20,
         "src/app/components/header/header.component.scss": 180,
         "src/app/components/login/login.component.ts": 575,
-        "src/app/models/user.model.ts": 55,
-        "src/app/services/userService/user.service.ts": 6072,
-        "src/app/components/login/login.component.html": 125,
+        "src/app/models/user.model.ts": 294,
+        "src/app/services/userService/user.service.ts": 6293,
+        "src/app/components/login/login.component.html": 135,
         "src/app/components/header/header.component.ts": 594,
         "src/app/components/register/register.component.ts": 928,
         "src/app/components/register/register.component.html": 601,
         "src/app/models/userRegister.model.ts": 82,
         "src/app/models/movie.model.ts": 12,
         "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\services\\userService\\user.service.ts.git": 10,
-        "src/app/components/logout/logout.component.ts": 1551,
-        "src/app/components/logout/logout.component.html": 386
+        "src/app/components/logout/logout.component.ts": 1707,
+        "src/app/components/logout/logout.component.html": 403,
+        "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\components\\login\\login.component.html.git": 10,
+        "src/app/components/profile/profile.component.ts": 1079,
+        "src/app/components/profile/profile.component.html": 605,
+        "src/app/models/profile.model.ts": 42
     }
 }
