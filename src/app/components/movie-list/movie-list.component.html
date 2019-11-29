@@ -3,7 +3,7 @@
     <input id='Searching' class='search' (keyup.enter)='searchMovies($event)' type="text" placeholder='Título, género...'>
 </div>
 <div class='movie'>
-    <div  *ngFor='let movie of movies'>
+    <div  *ngFor='let movie of movies'  >
         <h3>{{movie.title}}</h3>
         <img src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}">
     </div>

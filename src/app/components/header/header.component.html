@@ -5,16 +5,16 @@
           routerLinkActive="active-link">
             <span>Home</span>
           </a>   
-          <!-- <div class="isLoggedIn" *ngIf="userService.getUser()">
-            <a routerLink="/profile" routerLinkActive="active-link">
+          <div class="isLoggedIn" *ngIf="userService.tokenExists() == true">
+             <!--<a routerLink="/profile" routerLinkActive="active-link">
               <span>Profile</span>
-            </a>
-            <a routerLink="/logout" routerLinkActive="active-link">
+            </a>-->
+            <a routerLink="/logout"  routerLinkActive="active-link">
               <span>Logout</span>
             </a>
-          </div> -->
+          </div> 
       
-          <!-- <div class="isNotLoggedIn" *ngIf="!userService.getUser()">-->
+           <div class="isNotLoggedIn" *ngIf="userService.tokenExists()  == false">
         <div class="isNotLoggedIn">
           <a routerLink="/register" routerLinkActive="active-link">
             <span>Register</span>
@@ -23,5 +23,6 @@
             <span>Login</span>
           </a>
         </div> 
+        </div>
         </nav> 
-    </header>
+  </header>

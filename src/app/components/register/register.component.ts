@@ -9,8 +9,10 @@ import { UserService } from '../../services/userService/user.service';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements AfterViewInit {
-  @ViewChild('username',{read: ElementRef,static:false})
+  // @ViewChild('username',{read: ElementRef,static:false})
   username;
+  password;
+  email;
   user:User = {
     username:"",
     password:"",
@@ -25,7 +27,7 @@ export class RegisterComponent implements AfterViewInit {
       this.username.nativeElement.focus()
      }, 0);
   }
-  registrar(form){
+  registrar(form:any){
     
     this.user.username = form.value.username;
     this.user.password = form.value.password;

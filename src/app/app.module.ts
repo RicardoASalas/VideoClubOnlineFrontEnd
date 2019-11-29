@@ -13,6 +13,9 @@ import { ErrorService } from './services/errorService/error.service';
 import { UserService } from './services/userService/user.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { LogoutComponent } from './components/logout/logout.component';
 // import { LoginComponent } from './components/login/login.component';
 // import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 // import { PlaygroundComponent } from './playground/playground.component';
@@ -27,6 +30,9 @@ import { RegisterComponent } from './components/register/register.component';
     FooterComponent,
     MovieListComponent,
     RegisterComponent,
+    LoginComponent,
+    ProfileComponent,
+    LogoutComponent,
     // LoginComponent,
     // MovieDetailComponent  
   ],

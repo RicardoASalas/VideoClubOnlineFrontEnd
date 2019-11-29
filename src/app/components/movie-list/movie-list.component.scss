@@ -6,6 +6,7 @@
   justify-items: center;
   justify-content: space-between;
   margin: 3rem;
+  overflow-y: auto;
   
 
 
@@ -21,12 +22,12 @@
 }
 
 .search{
-  margin-left: 3rem;
+  margin-left: 2rem;
   margin-right: 1rem;
   // margin-top: 2rem;
-  font-size: 20px;
+  font-size: 16px;
 }
 #Searching{
   width: 20rem;
-  height: 2rem;
+  height: 1.5rem;
 }

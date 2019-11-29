@@ -1,22 +1,33 @@
-<form (submit)="login()" #form="ngForm">
+
+<form (submit)="login(form)" #form="ngForm">
+    
         <mat-form-field class="example-full-width">
             <input 
+            ngModel
+            #username ="ngModel"
             matInput 
             placeholder="Username"
             required
-             #username 
-             [(ngModel)]="user.username"
-              name="Username">
+            name="username">
         </mat-form-field>
+        {{username.errors | json}}
+        <div *ngIf="username.errors" class="alert alert-danger">
+                <div *ngIf="username.errors.required && (username.dirty || username.touched)">
+                        El nombre de usuario es requerido
+                    </div>
+            <div *ngIf="username.errors.minlength">
+                El nombre de usuario ha de ser como mínimo 8 carácteres
+            </div> 
+        </div>
+   
         <mat-form-field class="example-full-width">
             <input matInput 
             type="password" 
             placeholder="Password" 
-            #password 
-            [(ngModel)]="user.password" 
-            name="Password">
+            ngModel
+            #password ="ngModel"
+            minlength="8"
+            name="password">
         </mat-form-field> 
         <button mat-raised-button>Login</button>
-        
-    </form>
-    {{res?.message}}
+       
