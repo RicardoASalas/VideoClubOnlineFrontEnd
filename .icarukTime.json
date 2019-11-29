@@ -1,11 +1,11 @@
 {
-    "idleHeartbeats": 17374,
-    "navigatingHeartbeats": 7352,
-    "totalCodingHeartbeats": 26150,
+    "idleHeartbeats": 17600,
+    "navigatingHeartbeats": 7408,
+    "totalCodingHeartbeats": 26392,
     "languageHeartbeats": {
-        "typescript": 18879,
-        "html": 5795,
-        "plaintext": 30,
+        "typescript": 19009,
+        "html": 5897,
+        "plaintext": 40,
         "scss": 1446
     },
     "fileHeartbeats": {
@@ -16,8 +16,8 @@
         "src/app/app-routing.module.ts": 1032,
         "src/app/services/movie.service.ts": 798,
         "c:\\Users\\Richi\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\node_modules\\typescript\\lib\\lib.es5.d.ts": 14,
-        "src/app/components/movie-list/movie-list.component.html": 1534,
-        "src/app/components/movie-list/movie-list.component.ts": 3419,
+        "src/app/components/movie-list/movie-list.component.html": 1636,
+        "src/app/components/movie-list/movie-list.component.ts": 3525,
         "src/app/models/movie.models.ts": 69,
         "src/app/components/genre-movie-list/genre-movie-list.component.ts": 434,
         "src/app/components/genre-movie-list/genre-movie-list.component.html": 77,
@@ -36,13 +36,14 @@
         "src/app/components/register/register.component.ts": 928,
         "src/app/components/register/register.component.html": 601,
         "src/app/models/userRegister.model.ts": 82,
-        "src/app/models/movie.model.ts": 12,
+        "src/app/models/movie.model.ts": 26,
         "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\services\\userService\\user.service.ts.git": 10,
         "src/app/components/logout/logout.component.ts": 1707,
         "src/app/components/logout/logout.component.html": 403,
         "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\components\\login\\login.component.html.git": 10,
-        "src/app/components/profile/profile.component.ts": 1079,
+        "src/app/components/profile/profile.component.ts": 1089,
         "src/app/components/profile/profile.component.html": 605,
-        "src/app/models/profile.model.ts": 42
+        "src/app/models/profile.model.ts": 42,
+        "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\components\\profile\\profile.component.ts.git": 10
     }
 }

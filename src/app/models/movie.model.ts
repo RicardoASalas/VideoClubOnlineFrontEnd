@@ -3,7 +3,7 @@ export interface Movie {
     vote_count: number,
     video: boolean,
     poster_path: string,
-    id: number,
+    id: string,
     adult: boolean,
     backdrop_path:string,
     original_language: string,
