@@ -3,11 +3,16 @@
         <nav class="navigation">
           <a routerLink="/movie"
           routerLinkActive="active-link">
-            <span>Home</span>
+            <span>Inicio</span>
           </a>   
+
+              <a routerLink="/recentMovies"
+              routerLinkActive="active-link">
+                <span>Estrenos</span>
+              </a>   
           <div class="isLoggedIn" *ngIf="userService.tokenExists() == true">
              <a routerLink="/profile" routerLinkActive="active-link">
-              <span>Profile</span>
+              <span>Perfil</span>
             </a>
             <a routerLink="/logout"  routerLinkActive="active-link">
               <span>Logout</span>
@@ -17,7 +22,7 @@
            <div class="isNotLoggedIn" *ngIf="userService.tokenExists()  == false">
         <div class="isNotLoggedIn">
           <a routerLink="/register" routerLinkActive="active-link">
-            <span>Register</span>
+            <span>Registrarse</span>
           </a>
           <a routerLink="/login" routerLinkActive="active-link">
             <span>Login</span>

@@ -16,6 +16,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { LogoutComponent } from './components/logout/logout.component';
+import { RecentMoviesComponent } from './components/recent-movies/recent-movies.component';
 // import { LoginComponent } from './components/login/login.component';
 // import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 // import { PlaygroundComponent } from './playground/playground.component';
@@ -33,6 +34,7 @@ import { LogoutComponent } from './components/logout/logout.component';
     LoginComponent,
     ProfileComponent,
     LogoutComponent,
+    RecentMoviesComponent,
     // LoginComponent,
     // MovieDetailComponent  
   ],

@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../../services/movieService/movie.service';
-// import { ErrorService } from './services/error/error.service';
 import { Movie } from '../../models/movie.model';
-import { HttpErrorResponse } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-movie-list',

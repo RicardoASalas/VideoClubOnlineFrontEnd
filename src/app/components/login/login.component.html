@@ -10,12 +10,11 @@
             required
             name="username">
         </mat-form-field>
-        {{username.errors | json}}
         <div *ngIf="username.errors" class="alert alert-danger">
-                <div *ngIf="username.errors.required && (username.dirty || username.touched)">
+                <div *ngIf="username?.errors.required && (username.dirty || username.touched)">
                         El nombre de usuario es requerido
                     </div>
-            <div *ngIf="username.errors.minlength">
+            <div *ngIf="username?.errors.minlength">
                 El nombre de usuario ha de ser como mínimo 8 carácteres
             </div> 
         </div>

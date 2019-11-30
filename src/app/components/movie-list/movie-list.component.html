@@ -4,7 +4,7 @@
 </div>
 <div class='movie'>
     <div  *ngFor='let movie of movies'  >
-        <h3 id={{movie._id}}>{{movie.title}}</h3>
-        <img src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}">
+        <h3>{{movie.title}}</h3>
+        <img src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}" id={{movie._id}} >
     </div>
 </div>
