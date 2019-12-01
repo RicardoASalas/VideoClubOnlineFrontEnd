@@ -33,7 +33,7 @@ export class MovieDetailsComponent implements OnInit {
     alquilar(movie){
       
       this.dialogRef.close(movie)
-      console.log("entra aqui")
+      
     }
   
 }

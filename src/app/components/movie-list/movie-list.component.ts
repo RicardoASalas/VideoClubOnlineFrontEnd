@@ -55,16 +55,19 @@ export class MovieListComponent implements OnInit {
           });
       
           dialogRef.afterClosed().subscribe(result => {
+            console.log(result)
              this.movieRented = result;
+             console.log(this.movieRented)
              this.token = localStorage.getItem('Authorization')
+
              this.userService.rentMovie(this.movieRented, this.token)
              .subscribe(
               (data) => console.log(Object.values(data)),
               (error) => console.error(error)   
-              )
-             
-             console.log("la pelicula alquilada es "+this.movieRented.title)
+              
+             )
            });
+          
         }
    
 }

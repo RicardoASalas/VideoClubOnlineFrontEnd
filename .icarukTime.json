@@ -1,23 +1,23 @@
 {
-    "idleHeartbeats": 21777,
-    "navigatingHeartbeats": 8704,
-    "totalCodingHeartbeats": 32635,
+    "idleHeartbeats": 22024,
+    "navigatingHeartbeats": 8758,
+    "totalCodingHeartbeats": 32912,
     "languageHeartbeats": {
-        "typescript": 22401,
+        "typescript": 22668,
         "html": 8407,
-        "plaintext": 50,
+        "plaintext": 60,
         "scss": 1777
     },
     "fileHeartbeats": {
         "src/app/app.component.ts": 611,
-        "src/app/app.module.ts": 1329,
+        "src/app/app.module.ts": 1339,
         "src/app/app.component.html": 1083,
         "src/app/components/header/header.component.html": 1444,
         "src/app/app-routing.module.ts": 1133,
         "src/app/services/movie.service.ts": 798,
         "c:\\Users\\Richi\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\node_modules\\typescript\\lib\\lib.es5.d.ts": 14,
         "src/app/components/movie-list/movie-list.component.html": 1874,
-        "src/app/components/movie-list/movie-list.component.ts": 4729,
+        "src/app/components/movie-list/movie-list.component.ts": 4961,
         "src/app/models/movie.models.ts": 69,
         "src/app/components/genre-movie-list/genre-movie-list.component.ts": 434,
         "src/app/components/genre-movie-list/genre-movie-list.component.html": 77,
@@ -51,8 +51,9 @@
         "src/app/components/recent-movies/recent-movies.component.scss": 65,
         "src/app/components/footer/footer.component.html": 11,
         "src/app/components/movie-details/movie-details/movie-details.component.ts": 20,
-        "src/app/components/movie-details/movie-details.component.ts": 474,
+        "src/app/components/movie-details/movie-details.component.ts": 499,
         "src/app/components/movie-details/movie-details.component.html": 927,
-        "src/app/components/movie-details/movie-details.component.scss": 266
+        "src/app/components/movie-details/movie-details.component.scss": 266,
+        "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\app.module.ts.git": 10
     }
 }
