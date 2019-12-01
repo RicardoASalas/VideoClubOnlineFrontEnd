@@ -22,7 +22,11 @@ export class MovieListComponent implements OnInit {
   token: any;
   response: any;
 
-  constructor(private movieService: MovieService, public dialog: MatDialog, private userService: UserService) {} 
+  constructor(
+    private movieService: MovieService,
+    public dialog: MatDialog, 
+    private userService: UserService,
+    ) {} 
 
   ngOnInit(){
     this.movieService.getMovies()

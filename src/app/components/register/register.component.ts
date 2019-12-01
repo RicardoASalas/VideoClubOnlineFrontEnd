@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, AfterViewInit, OnChanges, ElementRef } from '@angular/core';
 import { User } from 'src/app/models/user.model';
 import { UserService } from '../../services/userService/user.service';
-
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -18,7 +18,7 @@ export class RegisterComponent implements AfterViewInit {
     password:"",
     email:""
   }
-  constructor(private userService:UserService) { }
+  constructor(private userService:UserService, private router:Router) { }
 
   ngAfterViewInit(){
     console.log('After View Init ')
@@ -35,6 +35,10 @@ export class RegisterComponent implements AfterViewInit {
     console.log(this.user)
     
       this.userService.register(this.user)
-        .subscribe(res=>console.log(res))
+        .subscribe(res=>{
+          this.router.navigate(['login']);
+          console.log(res)
+        })
+        
   }
 }

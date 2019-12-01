@@ -1,6 +1,7 @@
 import { Component, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
 import { User } from 'src/app/models/user.model';
 import { UserService } from '../../services/userService/user.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,7 @@ export class LoginComponent implements AfterViewInit {
     password:"",
     email:""
   }
-  constructor(private userService:UserService) { }
+  constructor(private userService:UserService,private router:Router) { }
 
   ngAfterViewInit(){
     console.log('After View Init ')
@@ -35,7 +36,7 @@ export class LoginComponent implements AfterViewInit {
         .subscribe(res=>{
           localStorage.setItem('Authorization', JSON.stringify(res))
           var guardado = localStorage.getItem('Authorization');
-
+          this.router.navigate(['profile']);
           console.log('objetoObtenido: ', JSON.parse(guardado));
         })
   }
