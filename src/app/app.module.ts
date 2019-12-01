@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule} from '@angular/common/http';
-import { MatInputModule, MatButtonModule } from '@angular/material';
+import { MatInputModule, MatButtonModule, MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule} from '@angular/forms';
@@ -17,6 +17,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { RecentMoviesComponent } from './components/recent-movies/recent-movies.component';
+import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 // import { LoginComponent } from './components/login/login.component';
 // import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 // import { PlaygroundComponent } from './playground/playground.component';
@@ -29,12 +30,14 @@ import { RecentMoviesComponent } from './components/recent-movies/recent-movies.
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MovieListComponent,
     RegisterComponent,
     LoginComponent,
     ProfileComponent,
     LogoutComponent,
     RecentMoviesComponent,
+    MovieListComponent,
+    MovieDetailsComponent
+    
     // LoginComponent,
     // MovieDetailComponent  
   ],
@@ -45,9 +48,14 @@ import { RecentMoviesComponent } from './components/recent-movies/recent-movies.
     FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
   ],
-  providers: [MovieService, ErrorService, UserService],
+  entryComponents: [
+    MovieDetailsComponent
+  ],
+
+  providers: [MovieService, ErrorService, UserService,{provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

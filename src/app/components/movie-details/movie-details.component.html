@@ -1,0 +1,23 @@
+
+
+<div class='modal'>
+    <h2>{{movie.title}}</h2>
+    <div class="movieDetails">
+        <div class='posterContainer'>
+            <img src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}">
+        </div>
+        
+        <div class='sinopsis'>
+            <h3>Sinopsis</h3>
+        
+            <h4>{{movie.overview}} </h4>
+            <h4>{{movie.release_date}}</h4>
+        </div>    
+    </div>
+</div>
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close (click)='onNoClick()' name='salir'><h3>SALIR</h3></button>
+
+    <button mat-button mat-dialog-close (click)='alquilar(movie)' name='alquilar'><h3>ALQUILAR</h3></button>
+<mat-dialog-actions>
+

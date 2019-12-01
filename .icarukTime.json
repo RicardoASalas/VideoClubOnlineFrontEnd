@@ -1,23 +1,23 @@
 {
-    "idleHeartbeats": 18922,
-    "navigatingHeartbeats": 7740,
-    "totalCodingHeartbeats": 28895,
+    "idleHeartbeats": 21777,
+    "navigatingHeartbeats": 8704,
+    "totalCodingHeartbeats": 32635,
     "languageHeartbeats": {
-        "typescript": 19961,
-        "html": 7373,
+        "typescript": 22401,
+        "html": 8407,
         "plaintext": 50,
-        "scss": 1511
+        "scss": 1777
     },
     "fileHeartbeats": {
         "src/app/app.component.ts": 611,
-        "src/app/app.module.ts": 861,
+        "src/app/app.module.ts": 1329,
         "src/app/app.component.html": 1083,
         "src/app/components/header/header.component.html": 1444,
         "src/app/app-routing.module.ts": 1133,
         "src/app/services/movie.service.ts": 798,
         "c:\\Users\\Richi\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\node_modules\\typescript\\lib\\lib.es5.d.ts": 14,
-        "src/app/components/movie-list/movie-list.component.html": 1793,
-        "src/app/components/movie-list/movie-list.component.ts": 3556,
+        "src/app/components/movie-list/movie-list.component.html": 1874,
+        "src/app/components/movie-list/movie-list.component.ts": 4729,
         "src/app/models/movie.models.ts": 69,
         "src/app/components/genre-movie-list/genre-movie-list.component.ts": 434,
         "src/app/components/genre-movie-list/genre-movie-list.component.html": 77,
@@ -30,7 +30,7 @@
         "src/app/components/header/header.component.scss": 180,
         "src/app/components/login/login.component.ts": 575,
         "src/app/models/user.model.ts": 294,
-        "src/app/services/userService/user.service.ts": 6293,
+        "src/app/services/userService/user.service.ts": 6522,
         "src/app/components/login/login.component.html": 186,
         "src/app/components/header/header.component.ts": 594,
         "src/app/components/register/register.component.ts": 928,
@@ -46,9 +46,13 @@
         "src/app/models/profile.model.ts": 42,
         "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\components\\profile\\profile.component.ts.git": 10,
         "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\components\\movie-list\\movie-list.component.html.git": 10,
-        "src/app/components/recent-movies/recent-movies.component.ts": 820,
-        "src/app/components/recent-movies/recent-movies.component.html": 303,
+        "src/app/components/recent-movies/recent-movies.component.ts": 896,
+        "src/app/components/recent-movies/recent-movies.component.html": 329,
         "src/app/components/recent-movies/recent-movies.component.scss": 65,
-        "src/app/components/footer/footer.component.html": 11
+        "src/app/components/footer/footer.component.html": 11,
+        "src/app/components/movie-details/movie-details/movie-details.component.ts": 20,
+        "src/app/components/movie-details/movie-details.component.ts": 474,
+        "src/app/components/movie-details/movie-details.component.html": 927,
+        "src/app/components/movie-details/movie-details.component.scss": 266
     }
 }
