@@ -7,6 +7,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { RecentMoviesComponent } from './components/recent-movies/recent-movies.component';
+import { MostRatedListComponent } from './components/most-rated-list/most-rated-list.component';
 
 // import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: "", redirectTo: "movie", pathMatch:"full"},
   {path:"movie", component:MovieListComponent},
   {path:"recentMovies", component:RecentMoviesComponent},
+  {path:"mostRated", component:MostRatedListComponent},
   {path:"register", component:RegisterComponent},
   {path:"login", component:LoginComponent},
   {path:"profile", component:ProfileComponent},

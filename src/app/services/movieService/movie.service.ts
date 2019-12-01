@@ -24,4 +24,5 @@ export class MovieService {
     console.log("el titulo es " + title)
     return this.http.get(`http://localhost:3001/movie/title/${title}`)
   }
+
 }

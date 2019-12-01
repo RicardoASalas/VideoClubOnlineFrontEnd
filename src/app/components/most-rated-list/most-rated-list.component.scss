@@ -1,0 +1,53 @@
+.container{
+    display:flex;
+    justify-content: center;
+}
+.movie {
+    display: grid;
+    border-radius:10px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color:#3B3B3B;
+    // display: flex;   flex-direction: row;
+    justify-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    overflow-y: auto;
+    overflow-y: auto;
+    height: 60%;
+    
+    .filmContainer{
+      align-items: center;
+      justify-content: center;
+    }
+    h1{
+      font-size: 5rem;
+      text-align: center;
+    }
+    h3{
+      font-size: 1rem;
+      text-align: center;
+    }
+    h5{
+        margin: none;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+  
+    img {
+      border-radius: 0.5rem;
+      width: 200px;
+      display:block;
+      margin:auto;
+    }
+  }
+  
+  .search{
+    margin-left: 2rem;
+    margin-right: 1rem;
+    // margin-top: 2rem;
+    font-size: 16px;
+  }
+  #Searching{
+    width: 20rem;
+    height: 1.5rem;
+  }

@@ -1,33 +1,33 @@
-
 <header>
-        <nav class="navigation">
-          <a routerLink="/movie"
-          routerLinkActive="active-link">
-            <span>Inicio</span>
-          </a>   
+  <nav class="navigation">
+    <a routerLink="/movie" routerLinkActive="active-link">
+      <span>Inicio</span>
+    </a>
 
-              <a routerLink="/recentMovies"
-              routerLinkActive="active-link">
-                <span>Estrenos</span>
-              </a>   
-          <div class="isLoggedIn" *ngIf="userService.tokenExists() == true">
-             <a routerLink="/profile" routerLinkActive="active-link">
-              <span>Perfil</span>
-            </a>
-            <a routerLink="/logout"  routerLinkActive="active-link">
-              <span>Logout</span>
-            </a>
-          </div> 
-      
-           <div class="isNotLoggedIn" *ngIf="userService.tokenExists()  == false">
-        <div class="isNotLoggedIn">
-          <a routerLink="/register" routerLinkActive="active-link">
-            <span>Registrarse</span>
-          </a>
-          <a routerLink="/login" routerLinkActive="active-link">
-            <span>Login</span>
-          </a>
-        </div> 
-        </div>
-        </nav> 
-  </header>
+    <a routerLink="/recentMovies" routerLinkActive="active-link">
+      <span>Estrenos</span>
+    </a>
+    <a routerLink="/mostRated" routerLinkActive="active-link">
+      <span>Top valoradas</span>
+    </a>
+    <div class="isLoggedIn" *ngIf="userService.tokenExists() == true">
+      <a routerLink="/profile" routerLinkActive="active-link">
+        <span>Perfil</span>
+      </a>
+      <a routerLink="/logout" routerLinkActive="active-link">
+        <span>Logout</span>
+      </a>
+    </div>
+
+    <div class="isNotLoggedIn" *ngIf="userService.tokenExists()  == false">
+      <div class="isNotLoggedIn">
+        <a routerLink="/register" routerLinkActive="active-link">
+          <span>Registrarse</span>
+        </a>
+        <a routerLink="/login" routerLinkActive="active-link">
+          <span>Login</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>

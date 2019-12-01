@@ -18,6 +18,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { RecentMoviesComponent } from './components/recent-movies/recent-movies.component';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
+import { MostRatedListComponent } from './components/most-rated-list/most-rated-list.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { MovieDetailsComponent } from './components/movie-details/movie-details.
     LogoutComponent,
     RecentMoviesComponent,
     MovieListComponent,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    MostRatedListComponent
     
   ],
   imports: [

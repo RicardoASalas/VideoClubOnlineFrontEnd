@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Las mas valoradas</h1>
+</div>
+<div class='movie'>
+    <div class='filmContainer' *ngFor="let movie of movies|slice:0:25" >
+       
+        <h3>{{movie.title}}</h3>
+        <h5>{{movie.vote_average}}</h5>
+        <img src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}" id={{movie._id}} (click)="openDialog(movie)">
+        
+    </div>
+</div>
+
