@@ -10,18 +10,18 @@ export class MovieService {
   objeto = {};
   constructor(protected http: HttpClient) { }
 
-  getMovies():Observable<object>{
-    
-   return this.http.get('http://localhost:3001/movie/')
+  getMovies(): Observable<object> {
+
+    return this.http.get('http://localhost:3001/movie/')
   }
 
-  getMoviesByGenre(genre):Observable<object>{
-    console.log("el titulo es "+genre)
+  getMoviesByGenre(genre): Observable<object> {
+    console.log("el titulo es " + genre)
     return this.http.get(`http://localhost:3001/movie/genre/${genre}`)
   }
 
-  getMoviesByTitle(title):Observable<object>{
-    console.log("el titulo es "+title)
+  getMoviesByTitle(title): Observable<object> {
+    console.log("el titulo es " + title)
     return this.http.get(`http://localhost:3001/movie/title/${title}`)
   }
 }

@@ -1,11 +1,17 @@
+
+  .container{
+    display:flex;
+    justify-content: center;
+}
 .movie {
     display: grid;
+    border-radius:10px;
     grid-template-columns: repeat(4, 1fr);
     background-color:#3B3B3B;
     // display: flex;   flex-direction: row;
     justify-items: center;
     justify-content: space-between;
-    margin: 3rem;
+    margin: 2rem;
     overflow-y: auto;
     overflow-y: auto;
     height: 60%;
@@ -29,7 +35,7 @@
       }
   
     img {
-      // border-radius: 0.7rem;
+      border-radius: 0.5rem;
       width: 200px;
       display:block;
       margin:auto;

@@ -1,4 +1,6 @@
+
 .movie {
+  border-radius:10px;
   overflow-y: auto;
   height: 60%;
   display: grid;
@@ -7,8 +9,9 @@
   // display: flex;   flex-direction: row;
   justify-items: center;
   justify-content: space-between;
-  margin: 3rem;
+  margin: 2rem;
   overflow-y: auto;
+  
   
 
 
@@ -18,7 +21,7 @@
   }
 
   img {
-    // border-radius: 0.7rem;
+    border-radius: 0.5rem;
     width: 200px;
     width: 200px;
     display:block;
@@ -35,4 +38,6 @@
 #Searching{
   width: 20rem;
   height: 1.5rem;
+  border-radius: 0.2rem;
+  
 }

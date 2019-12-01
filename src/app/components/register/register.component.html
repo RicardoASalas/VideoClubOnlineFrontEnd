@@ -1,59 +1,46 @@
-<form (submit)="registrar(form)" #form="ngForm">
-    
-    <mat-form-field class="example-full-width">
-        <input 
-        ngModel
-        #username ="ngModel"
-        matInput 
-        placeholder="Username"
-        minlength="8"
-        required
-        name="username">
-    </mat-form-field>
-   
-    <div *ngIf="username.errors" class="alert alert-danger">
-            <div *ngIf="username.errors.required && (username.dirty || username.touched)">
+<div class="container">
+    <div class="registerForm">
+        <form (submit)="registrar(form)" #form="ngForm">
+
+            <mat-form-field class="example-full-width">
+                <input ngModel #username="ngModel" matInput placeholder="Username" minlength="8" required
+                    name="username">
+            </mat-form-field>
+
+            <div *ngIf="username.errors" class="alert alert-danger">
+                <div *ngIf="username.errors.required && (username.dirty || username.touched)">
                     El nombre de usuario es requerido
                 </div>
-        <div *ngIf="username.errors.minlength">
-            El nombre de usuario ha de ser como mínimo 8 carácteres
-        </div> 
-    </div>
-    {{username.errors | json}} 
-    <mat-form-field class="example-full-width">
-        <input matInput 
-        type="password" 
-        placeholder="Password" 
-        ngModel
-        #password ="ngModel"
-        minlength="8"
-        required 
-        name ="password">
-    </mat-form-field> 
-    <div *ngIf="username.errors" class="alert alert-danger">
-        <div *ngIf="password.errors.required && (username.dirty || username.touched)">
-                El password es requerido
+                <div *ngIf="username.errors.minlength">
+                    El nombre de usuario ha de ser como mínimo 8 carácteres
+                </div>
             </div>
-    <div *ngIf="password.errors.minlength">
-        El password ha de ser como mínimo 8 carácteres
-    </div> 
-</div>
-{{password.errors | json}} 
-<mat-form-field class="example-full-width">
-    <input 
-        class="email"
-        ngModel
-        #name ="ngModel"
-        placeholder="email"
-        required
-        name="email">
-    </mat-form-field> 
-        <div *ngIf="username.errors" class="alert alert-danger">
-            <div *ngIf="email.errors.required && (username.dirty || username.touched)">
+            {{username.errors | json}}
+            <mat-form-field class="example-full-width">
+                <input matInput type="password" placeholder="Password" ngModel #password="ngModel" minlength="8"
+                    required name="password">
+            </mat-form-field>
+            <div *ngIf="username.errors" class="alert alert-danger">
+                <div *ngIf="password.errors.required && (username.dirty || username.touched)">
+                    El password es requerido
+                </div>
+                <div *ngIf="password.errors.minlength">
+                    El password ha de ser como mínimo 8 carácteres
+                </div>
+            </div>
+            {{password.errors | json}}
+            <mat-form-field class="example-full-width">
+                <input class="email" ngModel #name="ngModel" placeholder="email" required name="email">
+            </mat-form-field>
+            <div *ngIf="username.errors" class="alert alert-danger">
+                <div *ngIf="email.errors.required && (username.dirty || username.touched)">
                     El email es requerido
                 </div>
-        
+
+            </div>
+            {{email.errors | json}}
+            <button mat-raised-button>Register</button>
+        </form>
     </div>
-    {{email.errors | json}} 
-        <button mat-raised-button>Register</button>
-</form>
+</div>
+

@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, AfterViewInit, OnChanges, ElementRef } from '@angular/core';
 import { User } from 'src/app/models/user.model';
 import { UserService } from '../../services/userService/user.service';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -13,32 +13,32 @@ export class RegisterComponent implements AfterViewInit {
   username;
   password;
   email;
-  user:User = {
-    username:"",
-    password:"",
-    email:""
+  user: User = {
+    username: "",
+    password: "",
+    email: ""
   }
-  constructor(private userService:UserService, private router:Router) { }
+  constructor(private userService: UserService, private router: Router) { }
 
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     console.log('After View Init ')
-    setTimeout(() => { 
+    setTimeout(() => {
       console.log(this.username)
       this.username.nativeElement.focus()
-     }, 0);
+    }, 0);
   }
-  registrar(form:any){
-    
+  registrar(form: any) {
+
     this.user.username = form.value.username;
     this.user.password = form.value.password;
     this.user.email = form.value.email;
     console.log(this.user)
-    
-      this.userService.register(this.user)
-        .subscribe(res=>{
-          this.router.navigate(['login']);
-          console.log(res)
-        })
-        
+
+    this.userService.register(this.user)
+      .subscribe(res => {
+        this.router.navigate(['login']);
+        console.log(res)
+      })
+
   }
 }

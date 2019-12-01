@@ -1,5 +1,6 @@
 
-<form (submit)="login(form)" #form="ngForm">
+<div class="container">
+<form (submit)="login(form)" #form="ngForm" class="loginForm">
     
         <mat-form-field class="example-full-width">
             <input 
@@ -29,4 +30,8 @@
             name="password">
         </mat-form-field> 
         <button mat-raised-button>Login</button>
+</form>
+</div>
+
+
        

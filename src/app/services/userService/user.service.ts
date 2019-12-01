@@ -45,10 +45,12 @@ export class UserService {
   }
 
   rentMovie(movie, token){
+    if(movie){
     console.log("entra en el servicio " +movie._id)
     this.storagedToken=JSON.parse(token)
 
     return this.httpClient.patch('http://localhost:3001/user/profile/order',{id: movie._id, numberRentingDays: "15"},{headers: {Authorization: this.storagedToken.token }})
+    }
   }
 
   tokenExists(){
