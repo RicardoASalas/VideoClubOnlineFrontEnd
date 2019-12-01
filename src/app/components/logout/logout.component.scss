@@ -1,0 +1,15 @@
+.container{
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .logOutQuestion{
+        margin:3rem;
+        flex-direction: column;
+        background-color: #3B3B3B;
+        border-radius:10px;
+        display:flex;
+        padding: 2rem;
+    }
+}

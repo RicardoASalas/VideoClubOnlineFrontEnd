@@ -1,3 +1,7 @@
-<p>¿Seguro que quieres abandonar la sesión?</p>
-<button (click)="deslogear()">SI</button>
-<button routerLink="/movie">NO</button>
+<div class="container">
+    <div class="logOutQuestion">
+        <h3>¿Seguro que quieres abandonar la sesión?</h3>
+        <button mat-button (click)="deslogear()">SI</button>
+        <button mat-button routerLink="/movie">NO</button>
+    </div>
+</div>
