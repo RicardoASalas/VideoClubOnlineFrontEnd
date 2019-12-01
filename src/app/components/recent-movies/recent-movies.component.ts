@@ -18,6 +18,7 @@ export class RecentMoviesComponent implements OnInit {
     movieRented: any;
     rentingDays: any;
     token: any;
+    response: any;
     
     constructor(private movieService: MovieService,public dialog: MatDialog, private userService: UserService) {}
   
@@ -49,7 +50,10 @@ export class RecentMoviesComponent implements OnInit {
          this.token = localStorage.getItem('Authorization')
          this.userService.rentMovie(this.movieRented, this.token)
          .subscribe(
-          (data) => console.log(Object.values(data)),
+          (data) =>{
+            this.response=Object.values(data)
+            alert(this.response)
+            console.log(Object.values(data))},
           (error) => console.error(error)   
           )
          

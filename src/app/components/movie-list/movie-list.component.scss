@@ -1,4 +1,6 @@
 .movie {
+  overflow-y: auto;
+  height: 60%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color:#3B3B3B;
