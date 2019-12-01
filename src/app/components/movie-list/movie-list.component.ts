@@ -53,6 +53,7 @@ export class MovieListComponent implements OnInit {
          )   
          }
          openDialog(movie): void {
+           this.dialog.closeAll()
           const dialogRef = this.dialog.open(MovieDetailsComponent, {
             width: '600px',
             height: '500px',
