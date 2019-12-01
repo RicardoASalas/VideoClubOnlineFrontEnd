@@ -1,12 +1,12 @@
 {
-    "idleHeartbeats": 26224,
-    "navigatingHeartbeats": 10365,
-    "totalCodingHeartbeats": 41033,
+    "idleHeartbeats": 27164,
+    "navigatingHeartbeats": 10640,
+    "totalCodingHeartbeats": 42887,
     "languageHeartbeats": {
-        "typescript": 25880,
-        "html": 11124,
-        "plaintext": 110,
-        "scss": 3919
+        "typescript": 26816,
+        "html": 11841,
+        "plaintext": 120,
+        "scss": 4110
     },
     "fileHeartbeats": {
         "src/app/app.component.ts": 611,
@@ -30,11 +30,11 @@
         "src/app/components/header/header.component.scss": 180,
         "src/app/components/login/login.component.ts": 1938,
         "src/app/models/user.model.ts": 294,
-        "src/app/services/userService/user.service.ts": 6836,
+        "src/app/services/userService/user.service.ts": 7377,
         "src/app/components/login/login.component.html": 523,
         "src/app/components/header/header.component.ts": 594,
         "src/app/components/register/register.component.ts": 1122,
-        "src/app/components/register/register.component.html": 2053,
+        "src/app/components/register/register.component.html": 2081,
         "src/app/models/userRegister.model.ts": 82,
         "src/app/models/movie.model.ts": 26,
         "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\services\\userService\\user.service.ts.git": 10,
@@ -42,7 +42,7 @@
         "src/app/components/logout/logout.component.html": 575,
         "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\components\\login\\login.component.html.git": 10,
         "src/app/components/profile/profile.component.ts": 1089,
-        "src/app/components/profile/profile.component.html": 1537,
+        "src/app/components/profile/profile.component.html": 1588,
         "src/app/models/profile.model.ts": 42,
         "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\components\\profile\\profile.component.ts.git": 10,
         "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\components\\movie-list\\movie-list.component.html.git": 10,
@@ -51,9 +51,9 @@
         "src/app/components/recent-movies/recent-movies.component.scss": 566,
         "src/app/components/footer/footer.component.html": 11,
         "src/app/components/movie-details/movie-details/movie-details.component.ts": 20,
-        "src/app/components/movie-details/movie-details.component.ts": 555,
-        "src/app/components/movie-details/movie-details.component.html": 943,
-        "src/app/components/movie-details/movie-details.component.scss": 297,
+        "src/app/components/movie-details/movie-details.component.ts": 950,
+        "src/app/components/movie-details/movie-details.component.html": 1581,
+        "src/app/components/movie-details/movie-details.component.scss": 488,
         "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\app.module.ts.git": 10,
         "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\components\\recent-movies\\recent-movies.component.html.git": 10,
         "src/app/components/profile/profile.component.scss": 831,
@@ -64,6 +64,7 @@
         "src/app/components/logout/logout.component.scss": 271,
         "src/app/services/movieService/movie.service.ts": 13,
         "src/app/components/register/register.component.scss": 157,
-        "src/app/components/login/login.component.scss": 32
+        "src/app/components/login/login.component.scss": 32,
+        "c:\\Users\\Richi\\Desktop\\proyecto videoclub online\\frontEndVideoClubOnline\\src\\app\\components\\register\\register.component.html.git": 10
     }
 }

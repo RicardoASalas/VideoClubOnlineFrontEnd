@@ -12,7 +12,9 @@ import { JsonPipe } from '@angular/common';
 export class UserService {
   private user:User;
   private storagedToken:any;
-  private emptyBody:any;
+  private numberRentingDays:any;
+  private totalAmount:any;
+
 
   constructor(private httpClient:HttpClient) { }
   //Manda los datos del register form al back para ser registrados en la base de datos
@@ -48,8 +50,10 @@ export class UserService {
     if(movie){
    
     this.storagedToken=JSON.parse(token)
-
-    return this.httpClient.patch('http://localhost:3001/user/profile/order',{id: movie._id, numberRentingDays: "15"},{headers: {Authorization: this.storagedToken.token }})
+    console.log(this.numberRentingDays+"    "+this.totalAmount)
+    return this.httpClient.patch('http://localhost:3001/user/profile/order',
+    {id: movie._id, numberRentingDays: this.numberRentingDays, payingAmount: this.totalAmount},
+    {headers: {Authorization: this.storagedToken.token }})
     }
   }
   // Comprueba que haya un token guardado en la local Storage. devuelve true o false
@@ -61,6 +65,16 @@ export class UserService {
     else{
       return false
     }
+  }
+  // Recibe el numero de dias del componente movie-details, donde hemos hecho la accion de alquilar 
+  //y calcula el precio total del alquiler asignandolo a la variable totalAmount
+  getNumberRentingDays(numDays){
+    console.log("entra en el getNumberRentingDays")
+    this.numberRentingDays=numDays;
+    
+    this.totalAmount=parseInt(this.numberRentingDays)*1.8
+    console.log(this.numberRentingDays+"    "+this.totalAmount)
+
   }
 
   

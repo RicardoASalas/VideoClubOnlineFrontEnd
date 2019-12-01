@@ -1,5 +1,5 @@
 import { Component, OnInit ,Inject} from '@angular/core';
-import { MovieService } from '../../services/movieService/movie.service';
+import { UserService } from '../../services/userService/user.service';
 import { Movie } from '../../models/movie.model';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
@@ -16,7 +16,9 @@ export class MovieDetailsComponent implements OnInit {
 
   movie:any;
   movieRented: any;
+  numberRentingDays: any="1";
     constructor(
+      public userService:UserService,
       public dialogRef: MatDialogRef<MovieDetailsComponent>,
       @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
 
@@ -32,7 +34,8 @@ export class MovieDetailsComponent implements OnInit {
     }
     
     alquilar(movie){
-      
+      console.log(this.numberRentingDays)
+      this.userService.getNumberRentingDays(this.numberRentingDays)
       this.dialogRef.close(movie)
       
     }
