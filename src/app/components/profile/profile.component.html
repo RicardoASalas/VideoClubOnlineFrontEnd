@@ -1,8 +1,22 @@
-<p>Username: {{profile?.username}}</p>
-<p>Pelicula alquilada: {{profile?.filmRented}}</p>
-<p>Fecha de pedido: {{profile?.rentingDate}}</p>
-<p>Fecha de llegada: {{profile?.arrivalDate}}</p>
-<div *ngFor = 'let pedido of pedidos'>Historial de pedidos:
-    <p> {{pedido?.movieRentedTitle}}</p>
-    <p> {{pedido?.rentingDate}}</p>
+
+<div class="container">
+<div class = 'profileContainer'>
+    <h1>Perfil de Usuario</h1>
+    <div>
+        <div class='details'><h2>Username:</h2> {{profile?.username}}</div>
+        <div class='details'><h2>Pelicula alquilada:</h2> {{profile?.filmRented}}</div>
+        <div class='details'><h2>Dias de Alquiler:</h2> {{profile?.arrivalDate}}</div>
+        <div class='details'><h2>Total a pagar:</h2> {{profile?.arrivalDate}}</div>
+        <div class='details'><h2>Fecha de pedido:</h2> {{profile?.rentingDate}}</div>
+        <div class='details'><h2>Fecha de llegada:</h2> {{profile?.arrivalDate}}</div>
+        <div class='details'><h2>Historial de pedidos:</h2></div>
+            <div *ngFor='let pedido of pedidos' class="historic">
+                <div class='filmsViewed'>
+                    <span>{{pedido?.movieRentedTitle}}</span>
+                    <span>{{pedido?.rentingDate}}</span>
+                </div>
+            </div>
+    </div>
+
+</div>
 </div>

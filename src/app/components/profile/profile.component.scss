@@ -1,0 +1,42 @@
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+.profileContainer{
+    display:flex;
+    flex-direction: column;
+    background-color: #3B3B3B;
+    border-radius: 10px;
+    width: 70%;
+    height: 70%;
+    align-items: center;
+    padding: 2rem;
+    font-size: 18;
+    .details{
+        display:flex;
+        align-items: center;
+        h2{
+            margin-right: 2rem;
+        }
+    }
+    .historic{
+        display:flex;
+        flex-direction: column;
+        
+        .filmsViewed{
+            display:flex;
+            background-color: #1C1C1C;
+            span{
+                font-size: 20;
+                font-style: bold;
+                margin-left: 2rem;
+                padding: 1rem;
+            }
+        }
+        
+    }
+   
+    
+}
+}
