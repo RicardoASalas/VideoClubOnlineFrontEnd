@@ -1,15 +1,17 @@
-import { Component, OnInit, ViewChild, AfterViewInit, OnChanges, ElementRef } from '@angular/core';
+import { Component, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
 import { User } from 'src/app/models/user.model';
 import { UserService } from '../../services/userService/user.service';
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
 })
+
 export class RegisterComponent implements AfterViewInit {
-  // @ViewChild('username',{read: ElementRef,static:false})
+   @ViewChild('username',{read: ElementRef,static:false})
   username;
   password;
   email;

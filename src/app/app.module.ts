@@ -18,11 +18,6 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { RecentMoviesComponent } from './components/recent-movies/recent-movies.component';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
-// import { LoginComponent } from './components/login/login.component';
-// import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
-// import { PlaygroundComponent } from './playground/playground.component';
-// import { PadreComponent } from './interaccionComponentes/padre/padre.component';
-// import { HijoComponent } from './interaccionComponentes/hijo/hijo.component';
 
 
 @NgModule({
@@ -38,8 +33,6 @@ import { MovieDetailsComponent } from './components/movie-details/movie-details.
     MovieListComponent,
     MovieDetailsComponent
     
-    // LoginComponent,
-    // MovieDetailComponent  
   ],
   imports: [
     BrowserModule,
